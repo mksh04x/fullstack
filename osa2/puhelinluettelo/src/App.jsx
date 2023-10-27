@@ -136,7 +136,7 @@ const App = () => {
             setPersons(persons.filter(n => n.id !== existingPerson.id))
           })
       }
-    } else {
+      } else {
       personService
         .create(newPerson)
         .then((response) => {
@@ -149,9 +149,13 @@ const App = () => {
             setMessage(null)
           }, 5000)
           console.log('new person added');
-        });
+        })
+        .catch(error => {
+          setMessage(error.response.data.error)
+          console.log(error.response.data)
+        })
     }
-  };
+  }
 
   const filterBySearch = (e) => {
     const query = e.target.value.toLowerCase();

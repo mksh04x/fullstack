@@ -1,0 +1,11 @@
+POST http://localhost:3003/api/blogs
+Content-Type: application/json
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VybmFtZSI6Imxva2tpMTIzIiwiaWQiOiI2NTRkMTNmOWJhNzc4Y2IyMjBjMWVlOTQiLCJpYXQiOjE2OTk1NTAyNzF9.PTu4wxbqp6_V8W8V_Q8BA8mmSeCuAwQX5GuzkCEFydc
+
+{
+    "title": "testi",
+    "author": "mina",
+    "url": "www.google.fi",
+    "likes": "300",
+    "userId": "654cdf1b616ac0b885801aa1"
+}
